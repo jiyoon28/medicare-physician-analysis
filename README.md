@@ -3,6 +3,24 @@
 **Goal**  
 Understand what drives **Avg_Mdcr_Pymt_Amt** (average Medicare payment) and build simple models to predict it, using a 50k-row sample for fast iteration.
 
+## Project Motivation
+
+This project analyzes the CMS dataset **“Medicare Physician & Other Practitioners — by Provider and Service”** (50k-row sample) to answer:
+
+1) Do payments differ by **place of service** (F vs O)?
+2) Who dominates by **provider type** (volume)?
+3) How do **charges, payments, and utilization** move together?
+4) Which provider types tend to have **higher payments**?
+5) Does **urban–rural context (RUCA)** relate to payments?
+
+Process: **CRISP-DM** — gather → assess → clean → analyze → model → evaluate → visualize.
+
+## Files in the Repository
+
+- `medicare_physician_analysis.ipynb` — Main analysis notebook (EDA → modeling → what-if).
+- `data/sample_medicare_physician_small.csv.gz` — 50k-row sample used in the notebook.
+- `requirements.txt` — Reproducible environment
+- `README.md` — Project overview, results, and references.
 
 
 ## Dataset
@@ -24,4 +42,6 @@ Understand what drives **Avg_Mdcr_Pymt_Amt** (average Medicare payment) and buil
 
 - Models: Random Forest provided more realistic predictions than plain Linear Regression on raw target.
 
+**Blog post:** 
+https://medium.com/@moonjiyoon23/who-moves-medicare-spending-da750b090e69
 
